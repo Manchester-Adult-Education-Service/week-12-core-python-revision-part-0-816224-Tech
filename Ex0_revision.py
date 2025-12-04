@@ -37,7 +37,13 @@ print("-------------------------------------------\n"
 # 4. Print the final 'total_cost' using an f-string, formatted to two decimal places.
 
 # Write your code below:
+price = 45.00
 
+VAT_RATE = 0.20
+
+total_cost = price + (price * VAT_RATE)
+
+print(f"Total cost {total_cost:.2f}")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -54,7 +60,6 @@ print("-------------------------------------------\n"
 #    Push your changes
 # -------------------------------------------
 
-
 # -------------------------------------------
 # Task 2: Conditionals (IF/ELIF/ELSE) and Comparison
 # -------------------------------------------
@@ -70,7 +75,17 @@ print("\n-------------------------------------------\n"
 # 5. Otherwise (if total_cost is 60 or more), print "Purchase denied: Budget severely exceeded."
 
 # Write your code below:
+budget = 50
 
+if total_cost <= budget:
+ print("Purchase approved")
+
+elif total_cost > budget and total_cost < 60:
+ print("Warning: Purchase exceeds budget but is manageable.")
+
+else:
+ total_cost < 60
+ print("Purchase denied: Budget severely exceeded.")
 
 # -------------------------------------------
 # CHECKPOINT
