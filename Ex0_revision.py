@@ -37,7 +37,13 @@ print("-------------------------------------------\n"
 # 4. Print the final 'total_cost' using an f-string, formatted to two decimal places.
 
 # Write your code below:
+price = 45.00
 
+VAT_RATE = 0.20
+
+total_cost = price + (price * VAT_RATE)
+
+print(f"Total cost {total_cost:.2f}")
 
 # -------------------------------------------
 # CHECKPOINT
@@ -53,7 +59,6 @@ print("-------------------------------------------\n"
 #    Commit your changes with a meaningful message
 #    Push your changes
 # -------------------------------------------
-
 
 # -------------------------------------------
 # Task 2: Conditionals (IF/ELIF/ELSE) and Comparison
